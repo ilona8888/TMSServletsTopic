@@ -1,4 +1,4 @@
-package tms.lessons.tmsservletstopic.task_1;
+package tms.lessons.tmsservletstopic.lesson24.task_1;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,21 +12,19 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-@WebServlet("/washington")
-public class WashingtonTimeServlet extends HttpServlet {
+@WebServlet("/minsk")
+public class MinskTimeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         resp.setContentType("text/html");
 
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("HH:mm:ss");
-        //Time in Washington = Time in New_York
-        ZonedDateTime washingtonTime = ZonedDateTime.now(ZoneId.of("America/New_York"));
+        ZonedDateTime minskTime = ZonedDateTime.now(ZoneId.of("Europe/Minsk"));
 
         PrintWriter out = resp.getWriter();
         out.println("<html><body>");
-        out.println("<h1> Время в Вашингтоне "  + washingtonTime.format(fmt) + "</h1>");
+        out.println("<h1> Время в Минске "  + minskTime.format(fmt) + "</h1>");
         out.println("</body></html>");
-
     }
 }

@@ -1,4 +1,4 @@
-package tms.lessons.tmsservletstopic.task_2;
+package tms.lessons.tmsservletstopic.lesson24.task_2;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

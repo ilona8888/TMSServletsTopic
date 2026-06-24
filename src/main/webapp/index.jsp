@@ -25,6 +25,7 @@
     <li><a href="/verse">Стих</a><br/></li>
     <li><a href="/icon">Логотип TMS</a></li>
     <li><a href="/superHero">Описание Супер героя</a></li>
+    <li><a href="/superHeroBootstrap">Описание Супер героя c Bootstrap</a></li>
 </ul>
 </body>
 </html>

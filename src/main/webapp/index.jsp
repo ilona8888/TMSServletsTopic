@@ -12,5 +12,19 @@
 <a href="/beijing">Время в Пекине</a><br/>
 <a href="/washington">Время в Вашингтоне</a><br/>
 <a href="/checkAge">Проверить возраст</a><br/>
+
+<h2>Скачивание и загрузка файлов</h2><br/>
+<form method="post" action="/load-book" enctype="multipart/form-data">
+    Выберите файлы: <input type="file" name="loadFile" accept=".pdf" />
+    <input type="submit" value="Загрузить" /><br/>
+
+    <a href="/book">Скачать</a>
+</form><br/>
+
+<ul>
+    <li><a href="/verse">Стих</a><br/></li>
+    <li><a href="/icon">Логотип TMS</a></li>
+    <li><a href="/superHero">Описание Супер героя</a></li>
+</ul>
 </body>
 </html>
